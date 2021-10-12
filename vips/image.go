@@ -550,6 +550,11 @@ func (r *ImageRef) GetPages() int {
 	return vipsImageGetPages(r.image)
 }
 
+// GetPageHeight returns the page height of Image
+func (r *ImageRef) GetPageHeight() int {
+	return vipsImageGetPageHeight(r.image)
+}
+
 // Export creates a byte array of the image for use.
 // The function returns a byte array that can be written to a file e.g. via ioutil.WriteFile().
 // N.B. govips does not currently have built-in support for directly exporting to a file.

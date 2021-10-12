@@ -52,3 +52,10 @@ int get_image_get_n_pages(VipsImage *in) {
   page = vips_image_get_n_pages(in);
   return page;
 }
+
+//https://www.libvips.org/API/current/libvips-header.html#vips-image-get-page-height
+int get_image_get_page_height(VipsImage *in) {
+  int height = 0;
+  height = vips_image_get_page_height(in);
+  return height;
+}
